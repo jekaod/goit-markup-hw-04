@@ -24,7 +24,7 @@
           <a href="index.html" class="link logo">Web<span class="logo-black">Studio</span></a>
 
           <ul class="nav-list list">
-            <li class="nav-item"><a href="./index.html" class="link current">Студия</a></li>
+            <li class="nav-item"><a href="./index.html" class="link link-current">Студия</a></li>
 
             <li class="nav-item">
               <a href="./portfolio.html" class="link">Портфолио</a>
@@ -61,7 +61,7 @@
       <section class="section section-hero">
         <div class="container">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-          <button type="button" class="order">Заказать услугу</button>
+          <button data-modal-open type="button" class="order">Заказать услугу</button>
         </div>
       </section>
 
@@ -120,25 +120,47 @@
       </section>
       <!--Чем мы занимаемся-->
       <section class="section work">
-        <div class="container">
+        <div class="container work-container">
           <h2 class="section-title">Чем мы занимаемся</h2>
 
           <ul class="work-list card-set list">
             <li class="item">
-              <img class="img" src="./imeges/box1.jpg" alt="Разработка веб сайтов" width="370" />
+              <div class="work-thumb">
+                <img
+                  class="img"
+                  src="./imeges/box1.jpg"
+                  alt="Разработка веб сайта на экране планшета"
+                  width="370"
+                  height="294"
+                />
+                <p class="text-label">Десктопные приложения</p>
+              </div>
             </li>
 
             <li class="item">
-              <img
-                class="img"
-                src="./imeges/box2.jpg"
-                alt="Разработка мобильных приложений"
-                width="370"
-              />
+              <div class="work-thumb">
+                <img
+                  class="img"
+                  src="./imeges/box2.jpg"
+                  alt="Мщбильный телефоны на экране ноутбука"
+                  width="370"
+                  height="294"
+                />
+                <p class="text-label">Мобильные приложения</p>
+              </div>
             </li>
 
             <li class="item">
-              <img class="img" src="./imeges/box3.jpg" alt="Веб-дизайн" width="370" />
+              <div class="work-thumb">
+                <img
+                  class="img"
+                  src="./imeges/box3.jpg"
+                  alt="Веб-дизайн на экране планшета"
+                  width="370"
+                  height="294"
+                />
+                <p class="text-label">Дизайнерские решения</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -427,5 +449,9 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal"><button data-modal-close>close</button></div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
